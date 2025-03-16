@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 26, 26, 46;
+  --background-rgb: 248, 248, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+/* サイバーパンク風のスクロールバー - ライトモード用 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f4f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5a189a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00ffff;
+}
+
+/* ネオングロー効果 - ライトモード用 */
+.neon-glow {
+  text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
+.neon-box {
+  box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff;
+}
+
